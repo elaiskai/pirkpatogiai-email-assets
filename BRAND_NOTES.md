@@ -21,7 +21,7 @@ Brando analizė, tekstų kryptis, šaltiniai ir laiškų temos pateikti [BRAND_D
 2. Pasirink tuščią maketą. Turinio plotis — **600 px**, išorinės turinio bloko paraštės — **0**. Pašalink papildomus numatyto maketo logotipus ir tekstus.
 3. Įdėk **Custom HTML** elementą. Į HTML lauką nukopijuok visą atitinkamo `omnisend/0x-....html` failo turinį.
 4. Į **Styles** lauką įklijuok `omnisend/styles.css`. Tai būtina mobiliems tarpams, šriftų dydžiams ir kortelių išdėstymui.
-5. **Repozitorija privati.** Produktų nuotraukos ir logotipas HTML faile naudoja viešus parduotuvės adresus. Kiekvieno laiško hero reikia įkelti į „Omnisend“ vaizdų biblioteką: `assets/campaign/w1-hero.jpg`, `w2-hero.jpg`, `w3-hero.jpg`. Atitinkamo laiško HTML pakeisk hero `<img src="…">` adresą į „Omnisend“ suteiktą viešą URL. Dabartiniai `raw.githubusercontent.com/elaiskai/pirkpatogiai-email-assets/main/assets/campaign/…` hero adresai iš privačios repozitorijos gavėjams neveiks. Vietinė PERZIURA.html ir `previews/*-local.html` peržiūra veikia su vietiniais vaizdais. Po pakeitimo išsaugok ir patikrink Omnisend peržiūrą telefone.
+5. **Repozitorija vieša.** Visi 3 hero vaizdai pasiekiami laiškų HTML jau įrašytais `raw.githubusercontent.com` adresais; kiekvienas patikrintas be prisijungimo ir grąžina teisingą JPEG vaizdą. Produktų nuotraukos bei logotipas naudoja viešus parduotuvės adresus. Papildomai kelti hero į „Omnisend“ nereikia. Išsaugok laišką ir atnaujink „Omnisend“ peržiūrą. Vietinė PERZIURA.html bei `previews/*-local.html` peržiūra taip pat veikia. Repozitorija turi likti vieša, o naudojami vaizdai — prieinami tais pačiais keliais.
 6. Palik Omnisend paskyros siuntėjo duomenis ir reikiamą poraštę su tikru įmonės adresu. Laiškų HTML turi patvirtintą Omnisend žymą `[[ unsubscribe_link ]]`; patikrink, kad ji išsisprendžia. Jei platforma prideda antrą atsisakymo eilutę, suvienodink poraštės tekstą redaktoriuje, išlaikydamas veikiančią atsisakymo nuorodą.
 
 HTML teksto pakeitimai atliekami Custom HTML bloke. Tai nėra iš atskirų Omnisend produktų blokų sudėtas šablonas. Produktų pasirinkimas šioje versijoje nėra dinaminis. Kainos nerodomos; jų aktualumą žmogus mato produkto puslapyje.
@@ -69,5 +69,7 @@ Failai: `assets/campaign/w1-hero.jpg` (1080 × 1440), `w2-hero.jpg` ir `w3-hero.
 ## Patikra
 
 Laiškai vizualiai peržiūrėti 600 px turinio pločiu bei 390 ir 320 px mobiliuose ekranuose. Po peržiūros sumažinti tušti tarpai produktų kortelėse ir suvienodinti kortelių aukščiai. Kritiniai stiliai yra inline, visos lentelės turi presentation paskirtį, vaizdai — alt tekstus bei matmenis. Produktų ir navigacijos nuorodose naudojamos UTM žymos. Kupono galiojimo pabaiga, išimtys ir pardavimų reitingai neišgalvoti.
+
+Hero vaizdų vieši adresai papildomai patikrinti be autentifikacijos: visi trys grąžino HTTP 200, `image/jpeg`, o jų turinys sutapo su vietiniais failais.
 
 Tai naršyklės ir šaltinių patikra. Gautų Gmail, Apple Mail ir Outlook laiškų tikrinimas atliekamas po įkėlimo į Omnisend.
