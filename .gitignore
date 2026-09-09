@@ -1,0 +1,5 @@
+.DS_Store
+sources/
+assets/campaign/*-source.png
+assets/campaign/brook-gallery-*
+previews/*-report.json

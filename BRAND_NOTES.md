@@ -1,0 +1,73 @@
+# PirkPatogiai — įkėlimas į Omnisend
+
+**3 laiškai · 10 % · LABAS10 · 2026-09-09**
+
+Brando analizė, tekstų kryptis, šaltiniai ir laiškų temos pateikti [BRAND_DNA.md](BRAND_DNA.md). Visų laiškų peržiūra — [PERZIURA.html](PERZIURA.html).
+
+## Kokius failus naudoti
+
+| Failai | Paskirtis |
+|---|---|
+| `01-labas-namai.html`, `02-tavo-ritmui.html`, `03-issirink-patogiau.html` | Pilni HTML laiškai su dokumento antrašte ir mobiliais stiliais |
+| `omnisend/01-labas-namai.html` ir atitinkami 02, 03 failai | Turinys Omnisend Custom HTML laukui; be DOCTYPE, head ir body žymų |
+| `omnisend/styles.css` | Bendri stiliai, skirti HTML bloko **Styles** laukui |
+| Atitinkami `.txt` failai | Laiškų temos, preheaderiai ir tekstinės versijos |
+| `previews/` | Vietinės peržiūros ir kompiuterio / telefono ekrano vaizdai |
+| `assets/` | Oficialios produktų nuotraukos, logotipas ir 3 optimizuoti hero |
+
+## Įkelti kiekvieną laišką
+
+1. Savo welcome automatizacijoje atidaryk atitinkamą el. laišką ir įrašyk temą bei preheaderį iš BRAND_DNA arba `.txt` failo.
+2. Pasirink tuščią maketą. Turinio plotis — **600 px**, išorinės turinio bloko paraštės — **0**. Pašalink papildomus numatyto maketo logotipus ir tekstus.
+3. Įdėk **Custom HTML** elementą. Į HTML lauką nukopijuok visą atitinkamo `omnisend/0x-....html` failo turinį.
+4. Į **Styles** lauką įklijuok `omnisend/styles.css`. Tai būtina mobiliems tarpams, šriftų dydžiams ir kortelių išdėstymui.
+5. **Repozitorija privati.** Produktų nuotraukos ir logotipas HTML faile naudoja viešus parduotuvės adresus. Kiekvieno laiško hero reikia įkelti į „Omnisend“ vaizdų biblioteką: `assets/campaign/w1-hero.jpg`, `w2-hero.jpg`, `w3-hero.jpg`. Atitinkamo laiško HTML pakeisk hero `<img src="…">` adresą į „Omnisend“ suteiktą viešą URL. Dabartiniai `raw.githubusercontent.com/elaiskai/pirkpatogiai-email-assets/main/assets/campaign/…` hero adresai iš privačios repozitorijos gavėjams neveiks. Vietinė PERZIURA.html ir `previews/*-local.html` peržiūra veikia su vietiniais vaizdais. Po pakeitimo išsaugok ir patikrink Omnisend peržiūrą telefone.
+6. Palik Omnisend paskyros siuntėjo duomenis ir reikiamą poraštę su tikru įmonės adresu. Laiškų HTML turi patvirtintą Omnisend žymą `[[ unsubscribe_link ]]`; patikrink, kad ji išsisprendžia. Jei platforma prideda antrą atsisakymo eilutę, suvienodink poraštės tekstą redaktoriuje, išlaikydamas veikiančią atsisakymo nuorodą.
+
+HTML teksto pakeitimai atliekami Custom HTML bloke. Tai nėra iš atskirų Omnisend produktų blokų sudėtas šablonas. Produktų pasirinkimas šioje versijoje nėra dinaminis. Kainos nerodomos; jų aktualumą žmogus mato produkto puslapyje.
+
+Oficialios instrukcijos: [Custom HTML ir Styles laukai](https://support.omnisend.com/en/articles/1061866-add-configure-custom-html-item), [HTML importas](https://support.omnisend.com/en/articles/2964086-import-custom-html-email-templates), [personalizavimo žymos](https://support.omnisend.com/en/articles/11197418-use-liquid-templating-for-message-personalization).
+
+## Automatizacijos nustatymai
+
+Rekomenduojama seka:
+
+**Nauja prenumerata → 01 laiškas → laukti 1 dieną → 02 laiškas → laukti 2 dienas → 03 laiškas.**
+
+- Trigger: **Subscribed to Marketing**.
+- Filtrai: **Channel subscribed to = Email** ir **First subscription = true**.
+- Šaltinius susiek su formomis / integracija, kurios žada LABAS10 pasiūlymą. Patikrink realaus testinio kontakto prenumeratos šaltinį: vien „Signup form“ filtras gali atmesti per kitą integraciją perduotą kontaktą.
+- Kanalas: tik kontaktai, užsiprenumeravę el. pašto rinkodarą.
+- Išėjimo sąlyga: **Placed order**, jei šį įvykį perduoda parduotuvės integracija. Taip įsigijęs žmogus nebegaus likusių welcome priminimų. Užsakymo įvykio gavimą patikrink praktiškai prieš remdamasis šia sąlyga.
+- Ši seka skirta naujiems prenumeratoriams. Esamų kontaktų masiškai į ją neįtrauk.
+
+Jeigu LABAS10 vėliau bus patvirtintas kaip tik pirmo pirkimo pasiūlymas, papildomai atskirk jau pirkusius kontaktus pagal tikrus Omnisend užsakymų duomenis. Dabartiniuose tekstuose pirmo pirkimo apribojimas neteigiamas.
+
+Šaltiniai: [Welcome Automation](https://support.omnisend.com/en/articles/9653272-welcome-automation), [Exit Conditions / Automation FAQ](https://support.omnisend.com/en/articles/4315344-automation-faq).
+
+## Prieš įjungiant
+
+- Patikrink, kad parduotuvėje veikia **LABAS10 → 10 %** ir pasiūlymas sutampa su prenumeratos forma. Minimalios sumos, išimtys bei terminas nebuvo pateikti.
+- Nustatyk patvirtintą parduotuvės siuntėją ir tikrus paskyros / įmonės duomenis Omnisend poraštėje.
+- Atlik testinę prenumeratą su nauju adresu ir patikrink gautą laišką bei atsisakymo nuorodą. Šios užduoties metu laiškai nebuvo importuoti į tavo Omnisend paskyrą ar išsiųsti.
+- Patikrink, kad atlikus užsakymą kontaktas išeina iš šios serijos.
+
+Svetainės turinys ir galimi pirkimo duomenys nesuteikė pagrindo naudoti atsiliepimus, perkamiausių prekių etiketes ar kupono galiojimo atgalinį skaičiavimą.
+
+## Vizualai ir struktūra
+
+- **01:** didelis valgomojo hero su „Brook Cord“, 10 % pasiūlymas, 8 produktai ir blokas apie atskirų namų kampelių atnaujinimą.
+- **02:** darbo vietos hero su „Billings“ ir „Rako“, 4 produktai, trys konkretūs patikrinimai prieš perkant baldus, nuolaidos priminimas.
+- **03:** poilsio hero su „Elara“ ir „Corbitan“, kompaktiška LABAS10 juosta, 4 kiti produktai, pristatymo ir atsiskaitymo informacija.
+
+Hero scenos sukurtos integruotu ImageGen įrankiu pagal tikras konkrečių produktų nuotraukas. Tai stilizuotos interjero vizualizacijos; produktų kortelėse paliktos oficialios parduotuvės nuotraukos. Scenų dekoras nėra parduodamo baldo komplektacijos pažadas. Prekių komplektaciją nurodo parduotuvės aprašymas.
+
+Kūrybinės užduotys: šiltas šviesus valgomasis su „Brook Cord“ ir užrašu „LABAS, NAMAI.“; darbo vieta su „Billings“ bei „Rako“ ir užrašu „ERDVĖ, KURI TINKA TAU.“; ramus poilsio kampelis su „Elara“, „Corbitan“ ir užrašu „MAŽAS POKYTIS. DAUGIAU JAUKUMO.“. Visiems vaizdams naudotas žalsvas, grafito, šviesaus medžio ir baltos spalvų derinys, didelė aiški tipografika ir perėjimas į baltą apačioje. Antro hero korekcija atstatė tikrojo stalo atskirą lentynėlę virš pagrindinio stalviršio.
+
+Failai: `assets/campaign/w1-hero.jpg` (1080 × 1440), `w2-hero.jpg` ir `w3-hero.jpg` (1080 × 1350). Kiekvienas sveria mažiau nei 360 KB. Atvaizdavimas laiške — 600 px pločio, telefone mažinamas proporcingai.
+
+## Patikra
+
+Laiškai vizualiai peržiūrėti 600 px turinio pločiu bei 390 ir 320 px mobiliuose ekranuose. Po peržiūros sumažinti tušti tarpai produktų kortelėse ir suvienodinti kortelių aukščiai. Kritiniai stiliai yra inline, visos lentelės turi presentation paskirtį, vaizdai — alt tekstus bei matmenis. Produktų ir navigacijos nuorodose naudojamos UTM žymos. Kupono galiojimo pabaiga, išimtys ir pardavimų reitingai neišgalvoti.
+
+Tai naršyklės ir šaltinių patikra. Gautų Gmail, Apple Mail ir Outlook laiškų tikrinimas atliekamas po įkėlimo į Omnisend.
