@@ -3,3 +3,6 @@ sources/
 assets/campaign/*-source.png
 assets/campaign/brook-gallery-*
 previews/*-report.json
+previews/before-width.png
+previews/*-editor-600-full.png
+previews/*-mobile-390-snippet.png

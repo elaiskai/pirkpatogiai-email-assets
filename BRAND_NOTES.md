@@ -18,9 +18,9 @@ Brando analizė, tekstų kryptis, šaltiniai ir laiškų temos pateikti [BRAND_D
 ## Įkelti kiekvieną laišką
 
 1. Savo welcome automatizacijoje atidaryk atitinkamą el. laišką ir įrašyk temą bei preheaderį iš BRAND_DNA arba `.txt` failo.
-2. Pasirink tuščią maketą. Turinio plotis — **600 px**, išorinės turinio bloko paraštės — **0**. Pašalink papildomus numatyto maketo logotipus ir tekstus.
+2. Pasirink tuščią maketą. Turinio plotis — **600 px**, išorinės Custom HTML bloko paraštės — **0**, kad hero eitų per visą laiško plotį. HTML automatiškai prisitaiko ir prie siauresnio bloko su paraštėmis. Pašalink papildomus numatyto maketo logotipus ir tekstus.
 3. Įdėk **Custom HTML** elementą. Į HTML lauką nukopijuok visą atitinkamo `omnisend/0x-....html` failo turinį.
-4. Į **Styles** lauką įklijuok `omnisend/styles.css`. Tai būtina mobiliems tarpams, šriftų dydžiams ir kortelių išdėstymui.
+4. Į **Styles** lauką įklijuok `omnisend/styles.css`. Tai pritaiko tarpus, šriftų dydžius ir korteles telefonui. Pagrindinis laiško ir vaizdų plotis prisitaiko ir be šio lauko. CSS apribotas laiško elementais, kad nepakeistų aplinkinio Omnisend maketo.
 5. **Repozitorija vieša.** Visi 3 hero vaizdai pasiekiami laiškų HTML jau įrašytais `raw.githubusercontent.com` adresais; kiekvienas patikrintas be prisijungimo ir grąžina teisingą JPEG vaizdą. Produktų nuotraukos bei logotipas naudoja viešus parduotuvės adresus. Papildomai kelti hero į „Omnisend“ nereikia. Išsaugok laišką ir atnaujink „Omnisend“ peržiūrą. Vietinė PERZIURA.html bei `previews/*-local.html` peržiūra taip pat veikia. Repozitorija turi likti vieša, o naudojami vaizdai — prieinami tais pačiais keliais.
 6. Palik Omnisend paskyros siuntėjo duomenis ir reikiamą poraštę su tikru įmonės adresu. Laiškų HTML turi patvirtintą Omnisend žymą `[[ unsubscribe_link ]]`; patikrink, kad ji išsisprendžia. Jei platforma prideda antrą atsisakymo eilutę, suvienodink poraštės tekstą redaktoriuje, išlaikydamas veikiančią atsisakymo nuorodą.
 
@@ -73,3 +73,11 @@ Laiškai vizualiai peržiūrėti 600 px turinio pločiu bei 390 ir 320 px mobili
 Hero vaizdų vieši adresai papildomai patikrinti be autentifikacijos: visi trys grąžino HTTP 200, `image/jpeg`, o jų turinys sutapo su vietiniais failais.
 
 Tai naršyklės ir šaltinių patikra. Gautų Gmail, Apple Mail ir Outlook laiškų tikrinimas atliekamas po įkėlimo į Omnisend.
+
+## Pločio pataisymas pagal Omnisend ekrano vaizdą
+
+Ankstesnė 600 px lentelė išsiplėsdavo už bloko, kai jo paraštės turiniui palikdavo tik 552 px. Visų 3 laiškų pagrindinė lentelė dabar turi `width="100%"`, inline `width:100%`, `max-width:600px` ir fiksuotą vidinių stulpelių išdėstymą. Hero, logotipas ir produktų nuotraukos prisitaiko prie turimos vietos. Pašalintas papildomas išorinis tarpas virš logotipo.
+
+Norint pritaikyti pataisymą jau sukurtam laiškui, **pakeisk esamą Custom HTML turinį nauju failu iš `omnisend/` ir atnaujink Styles lauką**. GitHub pakeitimai automatiškai neperrašo anksčiau į Omnisend įklijuoto HTML. Hero adresai nesikeitė.
+
+Patikrinta naršyklėje imituojant 600 ir 560 px Omnisend bloką su 24 px paraštėmis, 390 ir 320 px telefoną su 16 px paraštėmis, taip pat be papildomo Styles lauko kompiuterio bloke. Pradinė versija atkūrė pločio klaidą; pataisytos versijos telpa visais 18 tikrintų atvejų. Tai bloko modelio patikra, o ne tiesioginis Omnisend paskyros redagavimas.
