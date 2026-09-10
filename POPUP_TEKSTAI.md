@@ -20,9 +20,8 @@
 
 ## Vaizdas
 
-Naudoti [popup-namai.jpg](assets/campaign/popup-namai.jpg). Vertikali 4:5 interjero nuotrauka be teksto. Kompiuteryje ją dėk šalia formos, telefone paslėpk arba rodyk trumpą vaizdo juostą virš teksto, kad forma liktų lengvai pasiekiama. Jei vaizdą apkerpi, išlaikyk kėdę kadro centre.
+Naudoti [popup-namai-horizontal.jpg](assets/campaign/popup-namai-horizontal.jpg). Horizontali 1600 × 600 px interjero nuotrauka be teksto, skirta rodyti virš formos. Omnisend vaizdo plotis — 100 % turinio bloko, aukštis — automatinis. Esant 600 px pločiui, vaizdo aukštis bus 225 px; 480 px pločiui — 180 px. Pakeisk ankstesnę vertikalią nuotrauką šiuo nauju failu.
 
-Viešas vaizdo adresas: https://raw.githubusercontent.com/elaiskai/pirkpatogiai-email-assets/main/assets/campaign/popup-namai.jpg
+Viešas vaizdo adresas: https://raw.githubusercontent.com/elaiskai/pirkpatogiai-email-assets/main/assets/campaign/popup-namai-horizontal.jpg
 
 Pasiūlymas: 10 € su LABAS10, pateikiamas welcome laiške. Pirkimo eilės numerio ir galiojimo sąlygų neįrašome, nes jos nebuvo patvirtintos.
-

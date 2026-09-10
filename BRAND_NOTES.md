@@ -1,5 +1,16 @@
 # PirkPatogiai — įkėlimas į Omnisend
 
+## Horizontali pop-up nuotrauka — 2026-09-10
+
+Pagal faktinį vartotojo Omnisend išdėstymą vaizdas dedamas virš formos, todėl sukurtas žemas, platus `assets/campaign/popup-namai-horizontal.jpg` (1600 × 600 px, 8:3). Ankstesnis vertikalus kadras paliktas kaip alternatyva šoninei kompozicijai. Naujas vaizdas sukurtas integruotu ImageGen įrankiu: scena išplėsta ir perkomponuota, išlaikant baldų tapatybę, dienos šviesą ir brando spalvas. Baigiamasis failas eksportuotas optimizuotu JPG formatu. Formoje vaizdo aukštis turi prisitaikyti automatiškai.
+
+<details><summary>Horizontalios versijos generavimo užduotis</summary>
+
+Use case: precise-object-edit / ads-marketing. Edit the reference interior photograph into a WIDE LOW HORIZONTAL POPUP BANNER. Required canvas aspect ratio EXACTLY 8:3 (2.6667:1), target 1600 pixels wide by 600 pixels high. This is a panoramic landscape image, absolutely NOT portrait, square, or standard 4:3. The banner will sit ABOVE an email signup form, so it must be low and wide. Keep the same warm natural editorial photography, olive-taupe corduroy Brook Cord chair with its stitched panels and FOUR natural beech legs, Edduma two-tier round pale oak coffee table with slender black metal supports, fresh yellow-green wall, sheer ivory curtains, pale oak floor, cream textured rug, and gentle sunlight. Zoom the camera OUT and widen the room horizontally. Recompose the COMPLETE chair, from top of back to feet, at about x=35% of the wide frame, occupying around 70–80% of image height. Place the COMPLETE round coffee table at x=64%, a little lower, in correct natural proportions. The wider room extends to both sides with a restrained leafy plant at far left and softly lit green wall at right. The exact furniture designs, panel seams, wood shapes, round tabletops, and black table posts must remain faithful to the original. Keep a cream cup, a simple vase with a small leafy branch, and one plain book as restrained styling. Maintain believable contact shadows and a realistic camera perspective. Leave generous horizontal breathing room; keep all important furniture comfortably away from the frame edges so a tiny crop does not cut it. Do not stretch the original photograph, do not just slice through the chair, do not chop furniture legs. Create a complete coherent wide room scene. No text, no letters, no numbers, no coupon, no logos, no watermark, no UI or white border. Full-bleed photograph on a strict 1600x600 wide canvas.
+
+</details>
+
+
 **3 laiškai · 10 € · LABAS10 · atnaujinta 2026-09-10**
 
 Brando analizė, tekstų kryptis, šaltiniai ir laiškų temos pateikti [BRAND_DNA.md](BRAND_DNA.md). Visų laiškų peržiūra — [PERZIURA.html](PERZIURA.html).
