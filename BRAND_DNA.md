@@ -1,6 +1,6 @@
 # PirkPatogiai — brand DNA ir welcome serija
 
-Parengta 2026-09-09 pagal dabartinę svetainę. Nuolaida patvirtinta užduotyje: **10 % su kodu LABAS10**.
+Parengta 2026-09-09 pagal svetainę. Nuolaida patikslinta 2026-09-10: **fiksuota 10 € nuolaida su kodu LABAS10**.
 
 ## Brando esmė
 
@@ -65,7 +65,7 @@ Vizualinis ritmas: didelis interjero hero su antrašte → trumpas kontekstas ir
 
 Laikai yra rekomenduojamas pradinis nustatymas. Trečias laiškas yra priminimas; galiojimo pabaiga ar „paskutinė proga“ jame neteigiama.
 
-**01 tema:** Labas! Tau – 10 % nuolaida su LABAS10
+**01 tema:** Labas! Tau – 10 € nuolaida su LABAS10
 
 **Preheader:** 8 idėjos tavo namams ir pažinties nuolaida. Nuo kurios pradėsi?
 
@@ -75,7 +75,7 @@ Laikai yra rekomenduojamas pradinis nustatymas. Trečias laiškas yra priminimas
 
 **03 tema:** Mažas pokytis namuose? Pradėk su LABAS10
 
-**Preheader:** Dar keturios idėjos jaukumui ir tavo 10 % nuolaida.
+**Preheader:** Dar keturios idėjos jaukumui ir tavo 10 € nuolaida.
 
 ## Atrinkti produktai
 

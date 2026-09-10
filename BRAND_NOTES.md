@@ -1,6 +1,6 @@
 # PirkPatogiai — įkėlimas į Omnisend
 
-**3 laiškai · 10 % · LABAS10 · 2026-09-09**
+**3 laiškai · 10 € · LABAS10 · atnaujinta 2026-09-10**
 
 Brando analizė, tekstų kryptis, šaltiniai ir laiškų temos pateikti [BRAND_DNA.md](BRAND_DNA.md). Visų laiškų peržiūra — [PERZIURA.html](PERZIURA.html).
 
@@ -47,7 +47,7 @@ Jeigu LABAS10 vėliau bus patvirtintas kaip tik pirmo pirkimo pasiūlymas, papil
 
 ## Prieš įjungiant
 
-- Patikrink, kad parduotuvėje veikia **LABAS10 → 10 %** ir pasiūlymas sutampa su prenumeratos forma. Minimalios sumos, išimtys bei terminas nebuvo pateikti.
+- Patikrink, kad parduotuvėje veikia **LABAS10 → 10 €** ir pasiūlymas sutampa su prenumeratos forma. Minimalios sumos, išimtys bei terminas nebuvo pateikti.
 - Nustatyk patvirtintą parduotuvės siuntėją ir tikrus paskyros / įmonės duomenis Omnisend poraštėje.
 - Atlik testinę prenumeratą su nauju adresu ir patikrink gautą laišką bei atsisakymo nuorodą. Šios užduoties metu laiškai nebuvo importuoti į tavo Omnisend paskyrą ar išsiųsti.
 - Patikrink, kad atlikus užsakymą kontaktas išeina iš šios serijos.
@@ -56,7 +56,7 @@ Svetainės turinys ir galimi pirkimo duomenys nesuteikė pagrindo naudoti atsili
 
 ## Vizualai ir struktūra
 
-- **01:** didelis valgomojo hero su „Brook Cord“, 10 % pasiūlymas, 8 produktai ir blokas apie atskirų namų kampelių atnaujinimą.
+- **01:** didelis valgomojo hero su „Brook Cord“, 10 € pasiūlymas, 8 produktai ir blokas apie atskirų namų kampelių atnaujinimą.
 - **02:** darbo vietos hero su „Billings“ ir „Rako“, 4 produktai, trys konkretūs patikrinimai prieš perkant baldus, nuolaidos priminimas.
 - **03:** poilsio hero su „Elara“ ir „Corbitan“, kompaktiška LABAS10 juosta, 4 kiti produktai, pristatymo ir atsiskaitymo informacija.
 
@@ -73,6 +73,17 @@ Laiškai vizualiai peržiūrėti 600 px turinio pločiu bei 390 ir 320 px mobili
 Hero vaizdų vieši adresai papildomai patikrinti be autentifikacijos: visi trys grąžino HTTP 200, `image/jpeg`, o jų turinys sutapo su vietiniais failais.
 
 Tai naršyklės ir šaltinių patikra. Gautų Gmail, Apple Mail ir Outlook laiškų tikrinimas atliekamas po įkėlimo į Omnisend.
+
+## Pop-up vaizdas — 2026-09-10
+
+Failas: `assets/campaign/popup-namai.jpg`, 1080 × 1350 px, vertikalus 4:5 kadras be užrašų. Sukurtas integruotu ImageGen įrankiu pagal oficialias „Brook Cord“ ir „Edduma“ nuotraukas; optimizuotas JPG formatui. Naudojamas šalia prenumeratos formos. Pop-up tekstai: [POPUP_TEKSTAI.md](POPUP_TEKSTAI.md).
+
+<details><summary>Galutinė vaizdo generavimo užduotis</summary>
+
+Use case: ads-marketing. Asset type: standalone photographic side-panel image for a PirkPatogiai.lt email signup pop-up. Generate a new original portrait 4:5 interior photograph, approximately 1080x1350, with NO text, NO numbers, NO logos, NO watermark, NO popup or interface. Input image 1 is the exact Brook Cord chair identity reference: preserve its olive-taupe fine ribbed corduroy, upholstered shell with horizontal and vertical panel seams, gently curved backrest, and four splayed natural beech legs. Input image 2 is the exact Edduma round coffee table identity reference: preserve its pale oak 80 cm round top and lower shelf, slim black metal supports and real proportions. Scene: a quiet, welcoming Lithuanian / Scandinavian home corner, warm pale oak floor, textured ivory rug, a soft fresh yellow-green painted wall inspired by brand #C9E165, sheer off-white curtain at the left edge, gentle natural morning light and soft believable plant shadows. Composition: chair dominant in the center-left, complete silhouette with feet in frame; the low table beside it at the right, realistically scaled, perhaps slightly cropped at the right edge; just one simple cream ceramic cup and a closed unbranded book on the table, one restrained leafy branch or plant near the curtain. Frame tightly enough to feel inviting and detailed in a small pop-up side panel. Keep the meaningful furniture in the central 80 percent so modest cropping is safe. Refined editorial interior photography, true fabric texture and timber grain, natural lens perspective, realistic grounding shadows, restrained styling. The green wall occupies only the upper/background part; chair and coffee table provide the focal interest. Full-bleed photo to all four edges, no white fading bands, no graphic blocks, no text whatsoever. Do not invent or distort the furniture design. Do not make a website mockup.
+
+</details>
+
 
 ## Pločio pataisymas pagal Omnisend ekrano vaizdą
 

@@ -1,5 +1,5 @@
 TEMA: Mažas pokytis namuose? Pradėk su LABAS10
-PREHEADER: Dar keturios idėjos jaukumui ir tavo 10 % nuolaida.
+PREHEADER: Dar keturios idėjos jaukumui ir tavo 10 € nuolaida.
 
 [PirkPatogiai.lt]
 https://pirkpatogiai.lt/?utm_source=omnisend&utm_medium=email&utm_campaign=welcome_labas10&utm_content=w3_logo
@@ -10,13 +10,13 @@ NAMAI
 [MAŽAS POKYTIS. DAUGIAU JAUKUMO. „Elara“ supamoji kėdė ir „Corbitan“ staliukas poilsio kampelyje.]
 https://pirkpatogiai.lt/baldai/svetaines-baldai/svetaines-foteliai/supynes-kede-elara-su-audiniu-de328557?utm_source=omnisend&utm_medium=email&utm_campaign=welcome_labas10&utm_content=w3_hero
 
-−10 %
+−10 €
 
 KODAS KREPŠELYJE
 LABAS10
 Tavo namų planams.
 
-Jei namų planai dar laukia savo eilės, primename tavo nuolaidos kodą. Įvesk LABAS10 krepšelyje ir gauk 10 % nuolaidą.
+Jei namų planai dar laukia savo eilės, primename tavo nuolaidos kodą. Įvesk LABAS10 krepšelyje ir gauk 10 € nuolaidą.
 Išsirinkti su LABAS10  →
 https://pirkpatogiai.lt/baldai?utm_source=omnisend&utm_medium=email&utm_campaign=welcome_labas10&utm_content=w3_primary
 
