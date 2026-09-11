@@ -10,7 +10,7 @@
 
 **Mygtukas:** Gauti 10 € nuolaidą
 
-**Smulkus tekstas:** Prenumeratos gali atsisakyti bet kada. [Privatumo politika](https://pirkpatogiai.lt/privatumo-politika).
+**Smulkus tekstas:** Prenumeratos gali atsisakyti bet kada.
 
 ## Po sėkmingos prenumeratos
 
@@ -20,8 +20,12 @@
 
 ## Vaizdas
 
-Naudoti [popup-namai-horizontal.jpg](assets/campaign/popup-namai-horizontal.jpg). Horizontali 1600 × 600 px interjero nuotrauka be teksto, skirta rodyti virš formos. Omnisend vaizdo plotis — 100 % turinio bloko, aukštis — automatinis. Esant 600 px pločiui, vaizdo aukštis bus 225 px; 480 px pločiui — 180 px. Pakeisk ankstesnę vertikalią nuotrauką šiuo nauju failu.
+Nauja 2026-09-11 versija: [popup-morelia-1072.jpg](assets/campaign/popup-morelia-1072.jpg). Horizontalus 1072 × 402 px vaizdas pagal „Morelia“ supamąją kėdę ir „Edduma“ staliuką. Rodant rekomenduojamu **536 px pločiu**, aukštis bus **201 px**. Failas dvigubos raiškos, kad išliktų ryškus ekranuose.
 
-Viešas vaizdo adresas: https://raw.githubusercontent.com/elaiskai/pirkpatogiai-email-assets/main/assets/campaign/popup-namai-horizontal.jpg
+„Omnisend“ vaizdo plotis — iki 536 px (100 % bloko), aukštis — automatinis. Nuotrauką dėk tarp antraštės ir aprašymo.
+
+Viešas vaizdo adresas: https://raw.githubusercontent.com/elaiskai/pirkpatogiai-email-assets/main/assets/campaign/popup-morelia-1072.jpg
+
+Brando stilius: mygtukas žalsvas `#C9E165`, tekstas tamsus `#2F2F2F`, šriftas „Poppins“ arba „Arial“.
 
 Pasiūlymas: 10 € su LABAS10, pateikiamas welcome laiške. Pirkimo eilės numerio ir galiojimo sąlygų neįrašome, nes jos nebuvo patvirtintos.

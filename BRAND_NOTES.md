@@ -1,5 +1,16 @@
 # PirkPatogiai — įkėlimas į Omnisend
 
+## Pop-up 536 px blokui — 2026-09-11
+
+Naujas vaizdas `assets/campaign/popup-morelia-1072.jpg`: 1072 × 402 px, skirtas rodyti 536 × 201 px dydžiu. Integruotu ImageGen įrankiu sukurta horizontali interjero scena pagal oficialias „Morelia“ ir „Edduma“ nuotraukas, išlaikant žalsvą, šviesaus medžio ir kreminę spalvas. Nuolaidos tekstas lieka redaguojamas formoje. Išsaugotas 10 € pasiūlymas su LABAS10 ir vartotojo pop-up teksto redakcija.
+
+<details><summary>Galutinė naujo vaizdo generavimo užduotis</summary>
+
+Use case: ads-marketing. Generate a refined photorealistic horizontal interior photograph for a Lithuanian home-and-furniture brand PirkPatogiai newsletter signup popup. Strict canvas aspect ratio 8:3, panoramic low landscape banner, 1600x600 target. No text, numbers, discounts, letters, logos or UI. Input image 1 is the exact Morelia rocking chair product reference: preserve its brown woven upholstered back and seat, natural warm wood frame, curved wooden armrests, and two long curved wooden rocking runners; keep the exact recognizable construction and true proportions. Input image 2 is the Edduma 80 cm round coffee table reference: pale wood two circular levels, slim black metal upright supports, exact proportions. Build a welcoming, uncluttered Scandinavian living-room corner. Put the complete rocking chair at the left-center, its full silhouette including BOTH curved rocking runners and the top of the backrest comfortably inside the frame, occupying about 72% of image height. Put the complete low round coffee table to its right at center-right with a single off-white ceramic mug and one plain closed book. Background: soft fresh yellow-green wall inspired by brand #C9E165, ivory curtain and soft daylight from far left, warm pale oak floor, textured cream rug under both pieces, one tasteful restrained plant near the curtain. Photography: naturally inviting morning light, realistic fine textile weave, wood grain, gentle contact shadows, authentic materials, balanced exposure, refined furniture editorial quality. Wide framing with enough breathing room at the left and right and only modest floor/ceiling space. This image will be displayed only 536px wide by 201px high above a signup form, so use a simple readable composition with the chair and table visibly separated and centered as a group. Full-bleed to all edges, no white fading bands, no graphic labels, no border, no photograph of a pop-up or website. The output must be a wide low 8:3 photo, never portrait or square.
+
+</details>
+
+
 ## Horizontali pop-up nuotrauka — 2026-09-10
 
 Pagal faktinį vartotojo Omnisend išdėstymą vaizdas dedamas virš formos, todėl sukurtas žemas, platus `assets/campaign/popup-namai-horizontal.jpg` (1600 × 600 px, 8:3). Ankstesnis vertikalus kadras paliktas kaip alternatyva šoninei kompozicijai. Naujas vaizdas sukurtas integruotu ImageGen įrankiu: scena išplėsta ir perkomponuota, išlaikant baldų tapatybę, dienos šviesą ir brando spalvas. Baigiamasis failas eksportuotas optimizuotu JPG formatu. Formoje vaizdo aukštis turi prisitaikyti automatiškai.
